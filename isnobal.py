@@ -93,25 +93,31 @@ class isnobal:
 		R_n = S_n + I_lw - 0.99 * 5.6697 * 10 ** (-8) * self.T_s_0 ** 4
 
 		# Heat conduction from soil
-		if soil:
 			
-			K_g = 	# Davis (1980)
-			K_s_0 = # Yen (1965)
-			K_s_1 = # Yen (1965)
-			D_e_g = # Anderson (1976)
-			D_e_0 = # Anderson (1976)
-			D_e_1 = # Anderson (1976)
+		K_g = 	# Davis (1980)
+		K_s_0 = # Yen (1965)
+		K_s_1 = # Yen (1965)
+		D_e_g = # Anderson (1976)
+		D_e_0 = # Anderson (1976)
+		D_e_1 = # Anderson (1976)
 
-			K_es_0 = K_s_0 + L_v * D_e_0 * q_s_0
-			K_es_1 = K_s_1 + L_v * D_e_1 * q_s_1
-			K_eg = K_g + L_v * D_e_g * q_g
+		K_es_0 = K_s_0 + L_v * D_e_0 * q_s_0
+		K_es_1 = K_s_1 + L_v * D_e_1 * q_s_1
+		K_eg = K_g + L_v * D_e_g * q_g
 
-			# Calculating ground to layer 1
-			G = 2 * K_es_1 * K_eg * (T_g - self.T_s_1) / (K_eg * z_s_1 + K_es_1 * z_g)
-			# Calculting layer 1 to layer 0
-			G_0 = 2 * K_es_0 * K_es_1 * (T_s_1 - T_s_0) / (K_es_1 * z_s_0 + K_es_0 * z_s_1)
+		# Calculating ground to layer 1
+		G = 2 * K_es_1 * K_eg * (T_g - self.T_s_1) / (K_eg * z_s_1 + K_es_1 * z_g)
+		# Calculting layer 1 to layer 0
+		G_0 = 2 * K_es_0 * K_es_1 * (T_s_1 - T_s_0) / (K_es_1 * z_s_0 + K_es_0 * z_s_1)
 
-		# Calculting rain over snow
+		# Calculating rain over snow
+		C_pp = __specific_heat_precip()
+		M = C_pp * rho_pp * m_pp * (T_pp - T_s_0) / self.t_step
+
+		# Calculating net energy transfer
+		delta_Q_0 = R_n + H + L_v * E + M + G_0
+		delta_Q = delta_Q_0 + G
+
 		
 
 
@@ -120,6 +126,9 @@ class isnobal:
 
 
 
+
+	def __specific_heat_precip(self):
+		pass
 
 	def __specific_humidity(self, T_a, T_g, e_a):
 		"""
@@ -138,10 +147,10 @@ class isnobal:
 
 
 	def __latent_sensible_heat_equations(self, input_data, spatial_idx):
-		rho_air = 1.225 # kg/m^3
-		k = 0.4 		# von Karman constant
-		g = 9.80616		# gravity constant
-		C_p = 1005. 	# J kg^-1 K^-1
+		rho_air = 1.225 									# kg/m^3
+		k = 0.4 											# von Karman constant
+		g = 9.80616											# gravity constant
+		C_p = 1005. 										# J kg^-1 K^-1
 		a_H = 1.
 		a_E = 1.
 
