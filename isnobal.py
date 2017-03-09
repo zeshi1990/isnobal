@@ -32,8 +32,11 @@ class isnobal:
 		self.z_0 = z_0
 		self.d_0 = 2./3. * 7.35 * self.z_0
 		self.z_s = z_s
+		# self.z_s_1 = 0.5 * self.z_s
+		# self.z_s_0 = 0.5 * self.z_s
 		self.rho = rho
 		self.T_s_0 = T_s_0
+		# self.T_s_1 = T_s_0
 		self.T_s = T_s
 		self.w_c = w_c
 
@@ -61,8 +64,8 @@ class isnobal:
 		T_g = gdal.Open().ReadAsArray().flatten()			# soil temperature
 		S_n = gdal.Open().ReadAsArray().flatten()			# Net solar radiation
 
-		# Calculate specific humidity in air and on snow surface
-		q, q_s_0 = self.__specific_humidity(T_a, e_a)		# Specific humidity of air and on snow surface
+		# Calculate specific humidity in air and on snow layer 0, snow layer 1 and soil
+		q, q_s_0, q_s_1, q_g = self.__specific_humidity(T_a, T_g, e_a)		
 
 		# When calculating L, u_star, H, E, never initialize them with zero.
 		# It will cause zero division error
@@ -89,20 +92,49 @@ class isnobal:
 		# Calculating shortwave solar radiation
 		R_n = S_n + I_lw - 0.99 * 5.6697 * 10 ** (-8) * self.T_s_0 ** 4
 
-		# Calculating
+		# Heat conduction from soil
+		if soil:
+			
+			K_g = 	# Davis (1980)
+			K_s_0 = # Yen (1965)
+			K_s_1 = # Yen (1965)
+			D_e_g = # Anderson (1976)
+			D_e_0 = # Anderson (1976)
+			D_e_1 = # Anderson (1976)
+
+			K_es_0 = K_s_0 + L_v * D_e_0 * q_s_0
+			K_es_1 = K_s_1 + L_v * D_e_1 * q_s_1
+			K_eg = K_g + L_v * D_e_g * q_g
+
+			# Calculating ground to layer 1
+			G = 2 * K_es_1 * K_eg * (T_g - self.T_s_1) / (K_eg * z_s_1 + K_es_1 * z_g)
+			# Calculting layer 1 to layer 0
+			G_0 = 2 * K_es_0 * K_es_1 * (T_s_1 - T_s_0) / (K_es_1 * z_s_0 + K_es_0 * z_s_1)
+
+		# Calculting rain over snow
+		
 
 
 
 
 
 
-	def __specific_humidity(self, T_a, e_a):
+
+
+	def __specific_humidity(self, T_a, T_g, e_a):
+		"""
+		need implementation
+		"""
 		humidity_air = 0.
-		humdiity_ss = 0.
-		return humidity_air, humidity_ss
+		humidity_s_0 = 0.
+		humidity_s_1 = 0.
+		humidity_g = 0.
+		return humidity_air, humidity_s_0, humidity_s_1, humidity_g
+
 
 	def __fsolve_wrapper(self, input_data, spatial_idx):
-		self.HEAT_FLUX[spatial_idx] = fsolve(self.__latent_sensible_heat_equations, input_data, args=spatial_idx)
+		self.HEAT_FLUX[spatial_idx] = fsolve(self.__latent_sensible_heat_equations, 
+			input_data, args=spatial_idx)
 
 
 	def __latent_sensible_heat_equations(self, input_data, spatial_idx):
@@ -118,12 +150,12 @@ class isnobal:
 
 		eq_1 = L - u_star**3 * rho_air / (k * g * (H / (T_a[spatial_idx] * C_p) + 0.61 * E))
 		eq_2 = u_star - u[spatial_idx] * k / (np.log((self.z_u - self.d_0) / self.z_0) - phi_sm)
-		eq_3 = H - (T_a[spatial_idx] - self.T_s_0[spatial_idx] * a_H * k * u_star * rho_air * C_p) / (np.log((self.z_T - self.d_0) / self.z_0) - phi_sh)
-		eq_4 = E - (q[spatial_idx] - q_s_0[spatial_idx]) * a_E * k * u_star * rho_air / (np.log((self.z_q - self.d_0) / self.z_0) - phi_sv)
+		eq_3 = (H - (T_a[spatial_idx] - self.T_s_0[spatial_idx] * a_H * k * u_star * rho_air * C_p) / 
+			(np.log((self.z_T - self.d_0) / self.z_0) - phi_sh))
+		eq_4 = (E - (q[spatial_idx] - q_s_0[spatial_idx]) * a_E * k * u_star * rho_air / 
+			(np.log((self.z_q - self.d_0) / self.z_0) - phi_sv))
 
 		return eq_1, eq_2, eq_3, eq_4
-
-
 
 
 	def __stability_function(self, L):
@@ -134,8 +166,8 @@ class isnobal:
 			phi_sm = -5.
 		else:
 			x = (1. - 16. * si_u) ** (0.25)
-			phi_sm = 2. * np.log((1.+x)/2.) + np.log((1.+x**2)/2.) - \
-					 2. * np.arctan(x) + np.pi / 2.
+			phi_sm = (2. * np.log((1.+x)/2.) + np.log((1.+x**2)/2.) - 
+				2. * np.arctan(x) + np.pi / 2.)
 		
 		if si_T > 0:
 			phi_sh = -5.
