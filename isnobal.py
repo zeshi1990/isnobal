@@ -3,7 +3,6 @@ import numpy as np
 import gdal
 from scipy.optimize import fsolve
 
-
 class isnobal:
 	def __init__(self, max_sd, z_u, z_T, z_g, z, z_0, z_s, rho, T_s_0, T_s, w_c):
 		"""
@@ -94,7 +93,7 @@ class isnobal:
 
 		# Heat conduction from soil
 			
-		K_g = 	# Davis (1980)
+		K_g = # Davis (1980)
 		K_s_0 = # Yen (1965)
 		K_s_1 = # Yen (1965)
 		D_e_g = # Anderson (1976)
