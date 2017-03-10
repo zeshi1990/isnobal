@@ -1,1 +1,0 @@
-libsnobal - library for energy-balance snowmelt model

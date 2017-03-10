@@ -1,1 +1,0 @@
-include $(IPW)/make/funcCatManpg

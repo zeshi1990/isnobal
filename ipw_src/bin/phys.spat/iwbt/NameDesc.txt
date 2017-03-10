@@ -1,1 +1,0 @@
-iwbt - wet or ice bulb temperature from elevation, air and dewpoint temperature
