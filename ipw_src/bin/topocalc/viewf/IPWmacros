@@ -1,0 +1,4 @@
+%define(name,"viewf")
+%define(description,"sky view and terrain configuration factors")
+%define(category,"Topographic Calculations")
+%define(auxDir,"/home/zeshi/Downloads/ipw/aux/viewf")

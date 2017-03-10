@@ -1,0 +1,3 @@
+%define(name,"iwbt")
+%define(description,"wet or ice bulb temperature from elevation, air and dewpoint temperature")
+%define(category,"Environmental Physics and Properties: Spatial")
