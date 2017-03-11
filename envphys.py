@@ -27,7 +27,6 @@ RGAS = 8.31432e3
 FREEZE = 2.7316e2
 BOIL = 3.7315e2
 
-
 # specific heat of air at constant pressure (J / kg / deg)
 CP_AIR = 1.005e3
 
@@ -154,6 +153,14 @@ def CAL_TO_J(c):
 # g to kg
 def G_TO_KG(g):
 	return 0.001 * g
+
+# C to K
+def C_TO_K(c):
+	return c + FREEZE
+
+# K to C
+def K_TO_C(k):
+	return k - FREEZE
 
 # /*
 #  *  specific heat of ice (J/(kg K))

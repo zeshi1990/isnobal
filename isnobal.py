@@ -3,6 +3,8 @@ import numpy as np
 import gdal
 from scipy.optimize import fsolve
 
+from envphys import *
+
 class isnobal:
 	def __init__(self, max_sd, z_u, z_T, z_g, z, z_0, z_s, rho, T_s_0, T_s, w_c):
 		"""
@@ -64,7 +66,7 @@ class isnobal:
 		S_n = gdal.Open().ReadAsArray().flatten()			# Net solar radiation
 
 		# Calculate specific humidity in air and on snow layer 0, snow layer 1 and soil
-		q, q_s_0, q_s_1, q_g = self.__specific_humidity(T_a, T_g, e_a)		
+		q, q_s_0, q_s_1, q_g = self.__specific_humidity(T_a, T_g, e_a)
 
 		# When calculating L, u_star, H, E, never initialize them with zero.
 		# It will cause zero division error
@@ -139,6 +141,24 @@ class isnobal:
 		humidity_g = 0.
 		return humidity_air, humidity_s_0, humidity_s_1, humidity_g
 
+	# saturated vapor pressure of ice
+	def __sati(self, T_k):
+		l10 = np.log(1.e1)
+		x = np.zeros(T_k.shape)
+		x[T_k > FREEZE] = __satw(self, T_k[T_k > FREEZE])
+		T_k_ice = T_k[T_k <= FREEZE]
+		x[T_k <= FREEZE] = np.power(1.e1, (-9.09718*((FREEZE/T_k_ice)-1.) - \
+			3.56654 * np.log(FREEZE/T_k_ice) / l10 + 8.76793e-1*(1.-(T_k_ice/FREEZE)) + np.log(6.1071)/l10))
+		
+
+	# saturated vapor pressure of water
+	def __satw(self, T_k):
+		l10 = np.log(1.e1)
+		x = (-7.90298 * (BOIL/T_k-1.) + 5.02808 * np.log(BOIL/T_k)/l10 - \
+				1.3816e-7*np.power(1.e1, 1.1344e1*(1.-T_k/BOIL)-1. + ) + \
+				8.1328e-3*(pow(1.e1,-3.49149*(BOIL/tk-1.))-1.) + \
+				log(SEA_LEVEL)/l10)
+		return np.power(10, x)
 
 	def __fsolve_wrapper(self, input_data, spatial_idx):
 		self.HEAT_FLUX[spatial_idx] = fsolve(self.__latent_sensible_heat_equations, 

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/library.c
+library.h
+/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/library.h
+stdio.h
+-
+h/envphys.h
+/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/h/envphys.h
+
+/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/library.h
+
+/usr/local/ipw/h/_physunits.h
+
+/usr/local/ipw/h/envphys.h
+math.h
+-
+_physunits.h
+/usr/local/ipw/h/_physunits.h
+
