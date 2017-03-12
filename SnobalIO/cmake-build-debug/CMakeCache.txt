@@ -196,7 +196,7 @@ SnobalIO.SO_LIB_DEPENDS:STATIC=
 SnobalIO_BINARY_DIR:STATIC=/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug
 
 //Dependencies for the target
-SnobalIO_LIB_DEPENDS:STATIC=general;libipw.a;general;libgctp.a;general;libimage.a;general;libmodel.a;general;libsnobal.a;general;libstropts.a;general;libtopo.a;
+SnobalIO_LIB_DEPENDS:STATIC=general;ipw;general;gctp;general;image;general;model;general;stropts;general;topo;general;snobal;
 
 //Value Computed by CMake
 SnobalIO_SOURCE_DIR:STATIC=/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO

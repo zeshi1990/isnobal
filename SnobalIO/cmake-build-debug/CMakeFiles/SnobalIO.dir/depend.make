@@ -3,6 +3,20 @@
 
 CMakeFiles/SnobalIO.dir/library.c.o: ../library.c
 CMakeFiles/SnobalIO.dir/library.c.o: ../library.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/_datetime.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/_error.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/_main.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/_math.h
 CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/_physunits.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/_sort.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/_str.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/_types.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/_uio.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/_util.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/conf.h
 CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/envphys.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/host.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/ipw.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/site.h
+CMakeFiles/SnobalIO.dir/library.c.o: /usr/local/ipw/h/snobal.h
 
