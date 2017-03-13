@@ -123,6 +123,627 @@ SnobalIO/fast:
 	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/build
 .PHONY : SnobalIO/fast
 
+_adj_layers.o: _adj_layers.c.o
+
+.PHONY : _adj_layers.o
+
+# target to build an object file
+_adj_layers.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_adj_layers.c.o
+.PHONY : _adj_layers.c.o
+
+_adj_layers.i: _adj_layers.c.i
+
+.PHONY : _adj_layers.i
+
+# target to preprocess a source file
+_adj_layers.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_adj_layers.c.i
+.PHONY : _adj_layers.c.i
+
+_adj_layers.s: _adj_layers.c.s
+
+.PHONY : _adj_layers.s
+
+# target to generate assembly for a file
+_adj_layers.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_adj_layers.c.s
+.PHONY : _adj_layers.c.s
+
+_adj_snow.o: _adj_snow.c.o
+
+.PHONY : _adj_snow.o
+
+# target to build an object file
+_adj_snow.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_adj_snow.c.o
+.PHONY : _adj_snow.c.o
+
+_adj_snow.i: _adj_snow.c.i
+
+.PHONY : _adj_snow.i
+
+# target to preprocess a source file
+_adj_snow.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_adj_snow.c.i
+.PHONY : _adj_snow.c.i
+
+_adj_snow.s: _adj_snow.c.s
+
+.PHONY : _adj_snow.s
+
+# target to generate assembly for a file
+_adj_snow.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_adj_snow.c.s
+.PHONY : _adj_snow.c.s
+
+_advec.o: _advec.c.o
+
+.PHONY : _advec.o
+
+# target to build an object file
+_advec.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_advec.c.o
+.PHONY : _advec.c.o
+
+_advec.i: _advec.c.i
+
+.PHONY : _advec.i
+
+# target to preprocess a source file
+_advec.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_advec.c.i
+.PHONY : _advec.c.i
+
+_advec.s: _advec.c.s
+
+.PHONY : _advec.s
+
+# target to generate assembly for a file
+_advec.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_advec.c.s
+.PHONY : _advec.c.s
+
+_below_thold.o: _below_thold.c.o
+
+.PHONY : _below_thold.o
+
+# target to build an object file
+_below_thold.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_below_thold.c.o
+.PHONY : _below_thold.c.o
+
+_below_thold.i: _below_thold.c.i
+
+.PHONY : _below_thold.i
+
+# target to preprocess a source file
+_below_thold.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_below_thold.c.i
+.PHONY : _below_thold.c.i
+
+_below_thold.s: _below_thold.c.s
+
+.PHONY : _below_thold.s
+
+# target to generate assembly for a file
+_below_thold.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_below_thold.c.s
+.PHONY : _below_thold.c.s
+
+_calc_layers.o: _calc_layers.c.o
+
+.PHONY : _calc_layers.o
+
+# target to build an object file
+_calc_layers.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_calc_layers.c.o
+.PHONY : _calc_layers.c.o
+
+_calc_layers.i: _calc_layers.c.i
+
+.PHONY : _calc_layers.i
+
+# target to preprocess a source file
+_calc_layers.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_calc_layers.c.i
+.PHONY : _calc_layers.c.i
+
+_calc_layers.s: _calc_layers.c.s
+
+.PHONY : _calc_layers.s
+
+# target to generate assembly for a file
+_calc_layers.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_calc_layers.c.s
+.PHONY : _calc_layers.c.s
+
+_cold_content.o: _cold_content.c.o
+
+.PHONY : _cold_content.o
+
+# target to build an object file
+_cold_content.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_cold_content.c.o
+.PHONY : _cold_content.c.o
+
+_cold_content.i: _cold_content.c.i
+
+.PHONY : _cold_content.i
+
+# target to preprocess a source file
+_cold_content.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_cold_content.c.i
+.PHONY : _cold_content.c.i
+
+_cold_content.s: _cold_content.c.s
+
+.PHONY : _cold_content.s
+
+# target to generate assembly for a file
+_cold_content.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_cold_content.c.s
+.PHONY : _cold_content.c.s
+
+_divide_tstep.o: _divide_tstep.c.o
+
+.PHONY : _divide_tstep.o
+
+# target to build an object file
+_divide_tstep.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_divide_tstep.c.o
+.PHONY : _divide_tstep.c.o
+
+_divide_tstep.i: _divide_tstep.c.i
+
+.PHONY : _divide_tstep.i
+
+# target to preprocess a source file
+_divide_tstep.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_divide_tstep.c.i
+.PHONY : _divide_tstep.c.i
+
+_divide_tstep.s: _divide_tstep.c.s
+
+.PHONY : _divide_tstep.s
+
+# target to generate assembly for a file
+_divide_tstep.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_divide_tstep.c.s
+.PHONY : _divide_tstep.c.s
+
+_do_tstep.o: _do_tstep.c.o
+
+.PHONY : _do_tstep.o
+
+# target to build an object file
+_do_tstep.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_do_tstep.c.o
+.PHONY : _do_tstep.c.o
+
+_do_tstep.i: _do_tstep.c.i
+
+.PHONY : _do_tstep.i
+
+# target to preprocess a source file
+_do_tstep.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_do_tstep.c.i
+.PHONY : _do_tstep.c.i
+
+_do_tstep.s: _do_tstep.c.s
+
+.PHONY : _do_tstep.s
+
+# target to generate assembly for a file
+_do_tstep.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_do_tstep.c.s
+.PHONY : _do_tstep.c.s
+
+_e_bal.o: _e_bal.c.o
+
+.PHONY : _e_bal.o
+
+# target to build an object file
+_e_bal.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_e_bal.c.o
+.PHONY : _e_bal.c.o
+
+_e_bal.i: _e_bal.c.i
+
+.PHONY : _e_bal.i
+
+# target to preprocess a source file
+_e_bal.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_e_bal.c.i
+.PHONY : _e_bal.c.i
+
+_e_bal.s: _e_bal.c.s
+
+.PHONY : _e_bal.s
+
+# target to generate assembly for a file
+_e_bal.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_e_bal.c.s
+.PHONY : _e_bal.c.s
+
+_evap_cond.o: _evap_cond.c.o
+
+.PHONY : _evap_cond.o
+
+# target to build an object file
+_evap_cond.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_evap_cond.c.o
+.PHONY : _evap_cond.c.o
+
+_evap_cond.i: _evap_cond.c.i
+
+.PHONY : _evap_cond.i
+
+# target to preprocess a source file
+_evap_cond.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_evap_cond.c.i
+.PHONY : _evap_cond.c.i
+
+_evap_cond.s: _evap_cond.c.s
+
+.PHONY : _evap_cond.s
+
+# target to generate assembly for a file
+_evap_cond.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_evap_cond.c.s
+.PHONY : _evap_cond.c.s
+
+_h2o_compact.o: _h2o_compact.c.o
+
+.PHONY : _h2o_compact.o
+
+# target to build an object file
+_h2o_compact.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_h2o_compact.c.o
+.PHONY : _h2o_compact.c.o
+
+_h2o_compact.i: _h2o_compact.c.i
+
+.PHONY : _h2o_compact.i
+
+# target to preprocess a source file
+_h2o_compact.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_h2o_compact.c.i
+.PHONY : _h2o_compact.c.i
+
+_h2o_compact.s: _h2o_compact.c.s
+
+.PHONY : _h2o_compact.s
+
+# target to generate assembly for a file
+_h2o_compact.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_h2o_compact.c.s
+.PHONY : _h2o_compact.c.s
+
+_h_le.o: _h_le.c.o
+
+.PHONY : _h_le.o
+
+# target to build an object file
+_h_le.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_h_le.c.o
+.PHONY : _h_le.c.o
+
+_h_le.i: _h_le.c.i
+
+.PHONY : _h_le.i
+
+# target to preprocess a source file
+_h_le.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_h_le.c.i
+.PHONY : _h_le.c.i
+
+_h_le.s: _h_le.c.s
+
+.PHONY : _h_le.s
+
+# target to generate assembly for a file
+_h_le.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_h_le.c.s
+.PHONY : _h_le.c.s
+
+_layer_mass.o: _layer_mass.c.o
+
+.PHONY : _layer_mass.o
+
+# target to build an object file
+_layer_mass.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_layer_mass.c.o
+.PHONY : _layer_mass.c.o
+
+_layer_mass.i: _layer_mass.c.i
+
+.PHONY : _layer_mass.i
+
+# target to preprocess a source file
+_layer_mass.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_layer_mass.c.i
+.PHONY : _layer_mass.c.i
+
+_layer_mass.s: _layer_mass.c.s
+
+.PHONY : _layer_mass.s
+
+# target to generate assembly for a file
+_layer_mass.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_layer_mass.c.s
+.PHONY : _layer_mass.c.s
+
+_mass_bal.o: _mass_bal.c.o
+
+.PHONY : _mass_bal.o
+
+# target to build an object file
+_mass_bal.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_mass_bal.c.o
+.PHONY : _mass_bal.c.o
+
+_mass_bal.i: _mass_bal.c.i
+
+.PHONY : _mass_bal.i
+
+# target to preprocess a source file
+_mass_bal.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_mass_bal.c.i
+.PHONY : _mass_bal.c.i
+
+_mass_bal.s: _mass_bal.c.s
+
+.PHONY : _mass_bal.s
+
+# target to generate assembly for a file
+_mass_bal.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_mass_bal.c.s
+.PHONY : _mass_bal.c.s
+
+_net_rad.o: _net_rad.c.o
+
+.PHONY : _net_rad.o
+
+# target to build an object file
+_net_rad.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_net_rad.c.o
+.PHONY : _net_rad.c.o
+
+_net_rad.i: _net_rad.c.i
+
+.PHONY : _net_rad.i
+
+# target to preprocess a source file
+_net_rad.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_net_rad.c.i
+.PHONY : _net_rad.c.i
+
+_net_rad.s: _net_rad.c.s
+
+.PHONY : _net_rad.s
+
+# target to generate assembly for a file
+_net_rad.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_net_rad.c.s
+.PHONY : _net_rad.c.s
+
+_new_density.o: _new_density.c.o
+
+.PHONY : _new_density.o
+
+# target to build an object file
+_new_density.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_new_density.c.o
+.PHONY : _new_density.c.o
+
+_new_density.i: _new_density.c.i
+
+.PHONY : _new_density.i
+
+# target to preprocess a source file
+_new_density.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_new_density.c.i
+.PHONY : _new_density.c.i
+
+_new_density.s: _new_density.c.s
+
+.PHONY : _new_density.s
+
+# target to generate assembly for a file
+_new_density.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_new_density.c.s
+.PHONY : _new_density.c.s
+
+_precip.o: _precip.c.o
+
+.PHONY : _precip.o
+
+# target to build an object file
+_precip.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_precip.c.o
+.PHONY : _precip.c.o
+
+_precip.i: _precip.c.i
+
+.PHONY : _precip.i
+
+# target to preprocess a source file
+_precip.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_precip.c.i
+.PHONY : _precip.c.i
+
+_precip.s: _precip.c.s
+
+.PHONY : _precip.s
+
+# target to generate assembly for a file
+_precip.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_precip.c.s
+.PHONY : _precip.c.s
+
+_runoff.o: _runoff.c.o
+
+.PHONY : _runoff.o
+
+# target to build an object file
+_runoff.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_runoff.c.o
+.PHONY : _runoff.c.o
+
+_runoff.i: _runoff.c.i
+
+.PHONY : _runoff.i
+
+# target to preprocess a source file
+_runoff.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_runoff.c.i
+.PHONY : _runoff.c.i
+
+_runoff.s: _runoff.c.s
+
+.PHONY : _runoff.s
+
+# target to generate assembly for a file
+_runoff.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_runoff.c.s
+.PHONY : _runoff.c.s
+
+_snowmelt.o: _snowmelt.c.o
+
+.PHONY : _snowmelt.o
+
+# target to build an object file
+_snowmelt.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_snowmelt.c.o
+.PHONY : _snowmelt.c.o
+
+_snowmelt.i: _snowmelt.c.i
+
+.PHONY : _snowmelt.i
+
+# target to preprocess a source file
+_snowmelt.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_snowmelt.c.i
+.PHONY : _snowmelt.c.i
+
+_snowmelt.s: _snowmelt.c.s
+
+.PHONY : _snowmelt.s
+
+# target to generate assembly for a file
+_snowmelt.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_snowmelt.c.s
+.PHONY : _snowmelt.c.s
+
+_time_compact.o: _time_compact.c.o
+
+.PHONY : _time_compact.o
+
+# target to build an object file
+_time_compact.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_time_compact.c.o
+.PHONY : _time_compact.c.o
+
+_time_compact.i: _time_compact.c.i
+
+.PHONY : _time_compact.i
+
+# target to preprocess a source file
+_time_compact.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_time_compact.c.i
+.PHONY : _time_compact.c.i
+
+_time_compact.s: _time_compact.c.s
+
+.PHONY : _time_compact.s
+
+# target to generate assembly for a file
+_time_compact.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_time_compact.c.s
+.PHONY : _time_compact.c.s
+
+_vars.o: _vars.c.o
+
+.PHONY : _vars.o
+
+# target to build an object file
+_vars.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_vars.c.o
+.PHONY : _vars.c.o
+
+_vars.i: _vars.c.i
+
+.PHONY : _vars.i
+
+# target to preprocess a source file
+_vars.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_vars.c.i
+.PHONY : _vars.c.i
+
+_vars.s: _vars.c.s
+
+.PHONY : _vars.s
+
+# target to generate assembly for a file
+_vars.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/_vars.c.s
+.PHONY : _vars.c.s
+
+do_data_tstep.o: do_data_tstep.c.o
+
+.PHONY : do_data_tstep.o
+
+# target to build an object file
+do_data_tstep.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/do_data_tstep.c.o
+.PHONY : do_data_tstep.c.o
+
+do_data_tstep.i: do_data_tstep.c.i
+
+.PHONY : do_data_tstep.i
+
+# target to preprocess a source file
+do_data_tstep.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/do_data_tstep.c.i
+.PHONY : do_data_tstep.c.i
+
+do_data_tstep.s: do_data_tstep.c.s
+
+.PHONY : do_data_tstep.s
+
+# target to generate assembly for a file
+do_data_tstep.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/do_data_tstep.c.s
+.PHONY : do_data_tstep.c.s
+
+init_snow.o: init_snow.c.o
+
+.PHONY : init_snow.o
+
+# target to build an object file
+init_snow.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/init_snow.c.o
+.PHONY : init_snow.c.o
+
+init_snow.i: init_snow.c.i
+
+.PHONY : init_snow.i
+
+# target to preprocess a source file
+init_snow.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/init_snow.c.i
+.PHONY : init_snow.c.i
+
+init_snow.s: init_snow.c.s
+
+.PHONY : init_snow.s
+
+# target to generate assembly for a file
+init_snow.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/init_snow.c.s
+.PHONY : init_snow.c.s
+
 library.o: library.c.o
 
 .PHONY : library.o
@@ -150,6 +771,33 @@ library.c.s:
 	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/library.c.s
 .PHONY : library.c.s
 
+vars.o: vars.c.o
+
+.PHONY : vars.o
+
+# target to build an object file
+vars.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/vars.c.o
+.PHONY : vars.c.o
+
+vars.i: vars.c.i
+
+.PHONY : vars.i
+
+# target to preprocess a source file
+vars.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/vars.c.i
+.PHONY : vars.c.i
+
+vars.s: vars.c.s
+
+.PHONY : vars.s
+
+# target to generate assembly for a file
+vars.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/vars.c.s
+.PHONY : vars.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +807,81 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SnobalIO"
+	@echo "... _adj_layers.o"
+	@echo "... _adj_layers.i"
+	@echo "... _adj_layers.s"
+	@echo "... _adj_snow.o"
+	@echo "... _adj_snow.i"
+	@echo "... _adj_snow.s"
+	@echo "... _advec.o"
+	@echo "... _advec.i"
+	@echo "... _advec.s"
+	@echo "... _below_thold.o"
+	@echo "... _below_thold.i"
+	@echo "... _below_thold.s"
+	@echo "... _calc_layers.o"
+	@echo "... _calc_layers.i"
+	@echo "... _calc_layers.s"
+	@echo "... _cold_content.o"
+	@echo "... _cold_content.i"
+	@echo "... _cold_content.s"
+	@echo "... _divide_tstep.o"
+	@echo "... _divide_tstep.i"
+	@echo "... _divide_tstep.s"
+	@echo "... _do_tstep.o"
+	@echo "... _do_tstep.i"
+	@echo "... _do_tstep.s"
+	@echo "... _e_bal.o"
+	@echo "... _e_bal.i"
+	@echo "... _e_bal.s"
+	@echo "... _evap_cond.o"
+	@echo "... _evap_cond.i"
+	@echo "... _evap_cond.s"
+	@echo "... _h2o_compact.o"
+	@echo "... _h2o_compact.i"
+	@echo "... _h2o_compact.s"
+	@echo "... _h_le.o"
+	@echo "... _h_le.i"
+	@echo "... _h_le.s"
+	@echo "... _layer_mass.o"
+	@echo "... _layer_mass.i"
+	@echo "... _layer_mass.s"
+	@echo "... _mass_bal.o"
+	@echo "... _mass_bal.i"
+	@echo "... _mass_bal.s"
+	@echo "... _net_rad.o"
+	@echo "... _net_rad.i"
+	@echo "... _net_rad.s"
+	@echo "... _new_density.o"
+	@echo "... _new_density.i"
+	@echo "... _new_density.s"
+	@echo "... _precip.o"
+	@echo "... _precip.i"
+	@echo "... _precip.s"
+	@echo "... _runoff.o"
+	@echo "... _runoff.i"
+	@echo "... _runoff.s"
+	@echo "... _snowmelt.o"
+	@echo "... _snowmelt.i"
+	@echo "... _snowmelt.s"
+	@echo "... _time_compact.o"
+	@echo "... _time_compact.i"
+	@echo "... _time_compact.s"
+	@echo "... _vars.o"
+	@echo "... _vars.i"
+	@echo "... _vars.s"
+	@echo "... do_data_tstep.o"
+	@echo "... do_data_tstep.i"
+	@echo "... do_data_tstep.s"
+	@echo "... init_snow.o"
+	@echo "... init_snow.i"
+	@echo "... init_snow.s"
 	@echo "... library.o"
 	@echo "... library.i"
 	@echo "... library.s"
+	@echo "... vars.o"
+	@echo "... vars.i"
+	@echo "... vars.s"
 .PHONY : help
 
 

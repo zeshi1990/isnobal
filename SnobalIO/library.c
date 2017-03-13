@@ -37,3 +37,8 @@ foo_struct * struct_io_test(foo_struct_input * fsi) {
     *result = r;
     return result;
 }
+
+void init(void) {
+    ro_data=0;
+    printf("The ro_data existing status is: %d!\n", ro_data);
+}

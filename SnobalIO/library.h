@@ -1,8 +1,12 @@
 #ifndef SNOBALIO_LIBRARY_H
 #define SNOBALIO_LIBRARY_H
+
 #include "h/ipw.h"
 #include "h/snobal.h"
 #include "h/envphys.h"
+#include "h/snow.h"
+#include "h/radiation.h"
+
 typedef struct {
     double dew_p;
     double sat_water;
