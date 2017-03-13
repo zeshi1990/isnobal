@@ -88,8 +88,8 @@
  **	z_snow
  */
 
-#include        "library.h"
-#include        "_snobal.h"
+#include "snobalio.h"
+#include "_snobal.h"
 
 /*
  *  A macro to update a time-weighted average for a quantity.

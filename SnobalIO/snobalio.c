@@ -1,6 +1,12 @@
-#include "library.h"
+#include "snobalio.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+/*
+ * Belows are some foo functions used for testing
+ * the interface with ctypes in Python and help
+ * Zeshi get familiar with writing c code :).
+ */
 
 double dew_point_test(double e) {
     double dew_p = dew_point(e);
@@ -38,7 +44,10 @@ foo_struct * struct_io_test(foo_struct_input * fsi) {
     return result;
 }
 
-void init(void) {
-    ro_data=0;
-    printf("The ro_data existing status is: %d!\n", ro_data);
+void null_pointer_test(double *input) {
+    if(input) {
+        printf("The input pointer has value %f\n", *input);
+    } else {
+        printf("The input pointer is NULL\n");
+    }
 }

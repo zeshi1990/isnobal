@@ -33,9 +33,8 @@
  **	(and those variables modified by "_adj_snow")
  */
 
-#include        "library.h"
-#include        "_snobal.h"
-#include        "h/envphys.h"
+#include "snobalio.h"
+#include "_snobal.h"
 
 #define VAP_SUB (2.501 / 2.835) /* ratio vaporization to sublimatin */
 

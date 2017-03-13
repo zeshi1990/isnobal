@@ -33,7 +33,7 @@
 **	z_s_l
 */
 
-#include "library.h"
+#include "snobalio.h"
 #include "_snobal.h"
 
 void

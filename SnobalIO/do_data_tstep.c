@@ -73,10 +73,7 @@
  **	stop_no_snow
  */
 
-#include <omp.h>
-#include "library.h"
-#include "h/ipw.h"
-#include "h/envphys.h"
+#include "snobalio.h"
 #include "_snobal.h"
 
 int

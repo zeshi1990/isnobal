@@ -39,7 +39,7 @@
 **	(and those variables modified by "_calc_layer" and "_layer_mass")
 */
 
-#include "library.h"
+#include "snobalio.h"
 #include "_snobal.h"
 
 void

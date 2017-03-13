@@ -55,10 +55,5 @@ print struct_result.contents.sat_water
 struct_io_result = struct_io_test(101325.0, 373.0)
 print struct_io_result.contents.dew_p
 print struct_io_result.contents.sat_water
-
-_snobal.init()
-
-# from ctypes import *
-#
-# global _snobal
-# _snobal = CDLL('smake-build-debug/libSnobalIO.so')
+print type(struct_io_result)
+print isinstance(struct_io_result, ctypes.POINTER(foo_struct))

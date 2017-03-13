@@ -27,7 +27,7 @@
  **	ro_predict
  */
 
-#include "library.h"
+#include "snobalio.h"
 #include "_snobal.h"
 
 void

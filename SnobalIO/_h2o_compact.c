@@ -51,8 +51,8 @@
  **
  */
 
-#include        "library.h"
-#include        "_snobal.h"
+#include "snobalio.h"
+#include "_snobal.h"
 
 /***  changed max density to 300 for shallow snow covers (3/31/04 DGM)  ***/
 /*** changed max density back to 550 for operational runs (5/04/04 DGM) ***/

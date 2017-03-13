@@ -609,33 +609,81 @@ CMakeFiles/SnobalIO.dir/init_snow.c.o.provides: CMakeFiles/SnobalIO.dir/init_sno
 CMakeFiles/SnobalIO.dir/init_snow.c.o.provides.build: CMakeFiles/SnobalIO.dir/init_snow.c.o
 
 
-CMakeFiles/SnobalIO.dir/library.c.o: CMakeFiles/SnobalIO.dir/flags.make
-CMakeFiles/SnobalIO.dir/library.c.o: ../library.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/SnobalIO.dir/library.c.o"
-	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SnobalIO.dir/library.c.o   -c "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/library.c"
+CMakeFiles/SnobalIO.dir/run_snobal.c.o: CMakeFiles/SnobalIO.dir/flags.make
+CMakeFiles/SnobalIO.dir/run_snobal.c.o: ../run_snobal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/SnobalIO.dir/run_snobal.c.o"
+	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SnobalIO.dir/run_snobal.c.o   -c "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/run_snobal.c"
 
-CMakeFiles/SnobalIO.dir/library.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SnobalIO.dir/library.c.i"
-	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/library.c" > CMakeFiles/SnobalIO.dir/library.c.i
+CMakeFiles/SnobalIO.dir/run_snobal.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SnobalIO.dir/run_snobal.c.i"
+	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/run_snobal.c" > CMakeFiles/SnobalIO.dir/run_snobal.c.i
 
-CMakeFiles/SnobalIO.dir/library.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SnobalIO.dir/library.c.s"
-	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/library.c" -o CMakeFiles/SnobalIO.dir/library.c.s
+CMakeFiles/SnobalIO.dir/run_snobal.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SnobalIO.dir/run_snobal.c.s"
+	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/run_snobal.c" -o CMakeFiles/SnobalIO.dir/run_snobal.c.s
 
-CMakeFiles/SnobalIO.dir/library.c.o.requires:
+CMakeFiles/SnobalIO.dir/run_snobal.c.o.requires:
 
-.PHONY : CMakeFiles/SnobalIO.dir/library.c.o.requires
+.PHONY : CMakeFiles/SnobalIO.dir/run_snobal.c.o.requires
 
-CMakeFiles/SnobalIO.dir/library.c.o.provides: CMakeFiles/SnobalIO.dir/library.c.o.requires
-	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/library.c.o.provides.build
-.PHONY : CMakeFiles/SnobalIO.dir/library.c.o.provides
+CMakeFiles/SnobalIO.dir/run_snobal.c.o.provides: CMakeFiles/SnobalIO.dir/run_snobal.c.o.requires
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/run_snobal.c.o.provides.build
+.PHONY : CMakeFiles/SnobalIO.dir/run_snobal.c.o.provides
 
-CMakeFiles/SnobalIO.dir/library.c.o.provides.build: CMakeFiles/SnobalIO.dir/library.c.o
+CMakeFiles/SnobalIO.dir/run_snobal.c.o.provides.build: CMakeFiles/SnobalIO.dir/run_snobal.c.o
+
+
+CMakeFiles/SnobalIO.dir/snobal_init.c.o: CMakeFiles/SnobalIO.dir/flags.make
+CMakeFiles/SnobalIO.dir/snobal_init.c.o: ../snobal_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/SnobalIO.dir/snobal_init.c.o"
+	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SnobalIO.dir/snobal_init.c.o   -c "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobal_init.c"
+
+CMakeFiles/SnobalIO.dir/snobal_init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SnobalIO.dir/snobal_init.c.i"
+	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobal_init.c" > CMakeFiles/SnobalIO.dir/snobal_init.c.i
+
+CMakeFiles/SnobalIO.dir/snobal_init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SnobalIO.dir/snobal_init.c.s"
+	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobal_init.c" -o CMakeFiles/SnobalIO.dir/snobal_init.c.s
+
+CMakeFiles/SnobalIO.dir/snobal_init.c.o.requires:
+
+.PHONY : CMakeFiles/SnobalIO.dir/snobal_init.c.o.requires
+
+CMakeFiles/SnobalIO.dir/snobal_init.c.o.provides: CMakeFiles/SnobalIO.dir/snobal_init.c.o.requires
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/snobal_init.c.o.provides.build
+.PHONY : CMakeFiles/SnobalIO.dir/snobal_init.c.o.provides
+
+CMakeFiles/SnobalIO.dir/snobal_init.c.o.provides.build: CMakeFiles/SnobalIO.dir/snobal_init.c.o
+
+
+CMakeFiles/SnobalIO.dir/snobalio.c.o: CMakeFiles/SnobalIO.dir/flags.make
+CMakeFiles/SnobalIO.dir/snobalio.c.o: ../snobalio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/SnobalIO.dir/snobalio.c.o"
+	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SnobalIO.dir/snobalio.c.o   -c "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobalio.c"
+
+CMakeFiles/SnobalIO.dir/snobalio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SnobalIO.dir/snobalio.c.i"
+	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobalio.c" > CMakeFiles/SnobalIO.dir/snobalio.c.i
+
+CMakeFiles/SnobalIO.dir/snobalio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SnobalIO.dir/snobalio.c.s"
+	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobalio.c" -o CMakeFiles/SnobalIO.dir/snobalio.c.s
+
+CMakeFiles/SnobalIO.dir/snobalio.c.o.requires:
+
+.PHONY : CMakeFiles/SnobalIO.dir/snobalio.c.o.requires
+
+CMakeFiles/SnobalIO.dir/snobalio.c.o.provides: CMakeFiles/SnobalIO.dir/snobalio.c.o.requires
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/snobalio.c.o.provides.build
+.PHONY : CMakeFiles/SnobalIO.dir/snobalio.c.o.provides
+
+CMakeFiles/SnobalIO.dir/snobalio.c.o.provides.build: CMakeFiles/SnobalIO.dir/snobalio.c.o
 
 
 CMakeFiles/SnobalIO.dir/vars.c.o: CMakeFiles/SnobalIO.dir/flags.make
 CMakeFiles/SnobalIO.dir/vars.c.o: ../vars.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/SnobalIO.dir/vars.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/SnobalIO.dir/vars.c.o"
 	/usr/local/bin/gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SnobalIO.dir/vars.c.o   -c "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/vars.c"
 
 CMakeFiles/SnobalIO.dir/vars.c.i: cmake_force
@@ -682,7 +730,9 @@ SnobalIO_OBJECTS = \
 "CMakeFiles/SnobalIO.dir/_vars.c.o" \
 "CMakeFiles/SnobalIO.dir/do_data_tstep.c.o" \
 "CMakeFiles/SnobalIO.dir/init_snow.c.o" \
-"CMakeFiles/SnobalIO.dir/library.c.o" \
+"CMakeFiles/SnobalIO.dir/run_snobal.c.o" \
+"CMakeFiles/SnobalIO.dir/snobal_init.c.o" \
+"CMakeFiles/SnobalIO.dir/snobalio.c.o" \
 "CMakeFiles/SnobalIO.dir/vars.c.o"
 
 # External object files for target SnobalIO
@@ -711,11 +761,13 @@ libSnobalIO.so: CMakeFiles/SnobalIO.dir/_time_compact.c.o
 libSnobalIO.so: CMakeFiles/SnobalIO.dir/_vars.c.o
 libSnobalIO.so: CMakeFiles/SnobalIO.dir/do_data_tstep.c.o
 libSnobalIO.so: CMakeFiles/SnobalIO.dir/init_snow.c.o
-libSnobalIO.so: CMakeFiles/SnobalIO.dir/library.c.o
+libSnobalIO.so: CMakeFiles/SnobalIO.dir/run_snobal.c.o
+libSnobalIO.so: CMakeFiles/SnobalIO.dir/snobal_init.c.o
+libSnobalIO.so: CMakeFiles/SnobalIO.dir/snobalio.c.o
 libSnobalIO.so: CMakeFiles/SnobalIO.dir/vars.c.o
 libSnobalIO.so: CMakeFiles/SnobalIO.dir/build.make
 libSnobalIO.so: CMakeFiles/SnobalIO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Linking C shared library libSnobalIO.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Linking C shared library libSnobalIO.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SnobalIO.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -746,7 +798,9 @@ CMakeFiles/SnobalIO.dir/requires: CMakeFiles/SnobalIO.dir/_time_compact.c.o.requ
 CMakeFiles/SnobalIO.dir/requires: CMakeFiles/SnobalIO.dir/_vars.c.o.requires
 CMakeFiles/SnobalIO.dir/requires: CMakeFiles/SnobalIO.dir/do_data_tstep.c.o.requires
 CMakeFiles/SnobalIO.dir/requires: CMakeFiles/SnobalIO.dir/init_snow.c.o.requires
-CMakeFiles/SnobalIO.dir/requires: CMakeFiles/SnobalIO.dir/library.c.o.requires
+CMakeFiles/SnobalIO.dir/requires: CMakeFiles/SnobalIO.dir/run_snobal.c.o.requires
+CMakeFiles/SnobalIO.dir/requires: CMakeFiles/SnobalIO.dir/snobal_init.c.o.requires
+CMakeFiles/SnobalIO.dir/requires: CMakeFiles/SnobalIO.dir/snobalio.c.o.requires
 CMakeFiles/SnobalIO.dir/requires: CMakeFiles/SnobalIO.dir/vars.c.o.requires
 
 .PHONY : CMakeFiles/SnobalIO.dir/requires

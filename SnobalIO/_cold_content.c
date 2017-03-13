@@ -19,8 +19,8 @@
 **	The layer's cold content.
 */
 
-#include        "library.h"
-#include        "_snobal.h"
+#include "snobalio.h"
+#include "_snobal.h"
 
 double
 _cold_content(

@@ -20,7 +20,7 @@
 **			J. Domingo, Green Code
 */
 
-#include "library.h"
+#include "snobalio.h"
 
 /* --------------------------------------------------------------------- */
 

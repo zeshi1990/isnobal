@@ -114,9 +114,6 @@
 		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/_evap_cond.c">
 			<Option target="SnobalIO"/>
 		</Unit>
-		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/_extern.h">
-			<Option target="SnobalIO"/>
-		</Unit>
 		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/_h2o_compact.c">
 			<Option target="SnobalIO"/>
 		</Unit>
@@ -159,10 +156,16 @@
 		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/init_snow.c">
 			<Option target="SnobalIO"/>
 		</Unit>
-		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/library.c">
+		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/run_snobal.c">
 			<Option target="SnobalIO"/>
 		</Unit>
-		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/library.h">
+		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobal_init.c">
+			<Option target="SnobalIO"/>
+		</Unit>
+		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobalio.c">
+			<Option target="SnobalIO"/>
+		</Unit>
+		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobalio.h">
 			<Option target="SnobalIO"/>
 		</Unit>
 		<Unit filename="/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/vars.c">

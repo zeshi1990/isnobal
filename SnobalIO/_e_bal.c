@@ -24,9 +24,8 @@
  **
  */
 
-#include        "library.h"
-#include        "_snobal.h"
-#include        "h/snow.h"
+#include "snobalio.h"
+#include "_snobal.h"
 
 int    
 _e_bal(void)

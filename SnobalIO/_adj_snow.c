@@ -33,7 +33,7 @@
  **	(and those variables modified by "_adj_layers" and "_layer_mass")
  */
 
-#include "library.h"
+#include "snobalio.h"
 #include "_snobal.h"
 
 /*#define MAX_SNOW_DENSITY	750 (change by D.Marks, 05/14/2013):*/

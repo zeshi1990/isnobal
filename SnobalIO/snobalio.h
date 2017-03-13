@@ -1,29 +1,12 @@
 #ifndef SNOBALIO_LIBRARY_H
 #define SNOBALIO_LIBRARY_H
 
+#include <omp.h>
 #include "h/ipw.h"
 #include "h/snobal.h"
 #include "h/envphys.h"
 #include "h/snow.h"
 #include "h/radiation.h"
-
-typedef struct {
-    double dew_p;
-    double sat_water;
-} foo_struct;
-
-typedef struct {
-    double e;
-    double tk;
-} foo_struct_input;
-
-double dew_point_test(double e);
-
-double * multiple_vars_test(double e, double tk);
-
-foo_struct * struct_test(double e, double tk);
-
-foo_struct * struct_test_io(foo_struct_input * fsi);
 
 typedef struct {
 
@@ -101,6 +84,7 @@ typedef struct {
 } model_climate_inputs;
 
 typedef struct {
+
     /*
      * measurement heights/depths
      * relative_hts: TRUE if the data given is relative to snow cover, FALSE if not
@@ -110,6 +94,7 @@ typedef struct {
      * z_T: temperature measurement height, m
      * z_0: roughness length, m
      */
+
     int relative_hts;
     double elevation;
     double z_g;
@@ -119,6 +104,7 @@ typedef struct {
 } model_measure_params;
 
 typedef struct {
+
     /* precipitation inputs
      * precip_now: precipitation occur for current timestep?
      * m_pp: specific mass of total precip (kg/m^2)
@@ -134,5 +120,38 @@ typedef struct {
     double T_pp;
 } model_precip_inputs;
 
+model_states * run_snobal(model_params * model_params1,
+                          model_measure_params * model_measure_params1,
+                          model_states * model_states1,
+                          model_climate_inputs * model_climate_inputs1,
+                          model_climate_inputs * model_climate_inputs2,
+                          model_precip_inputs * model_precip_inputs1);
+
+int snobal_init(model_params * model_params1,
+                model_measure_params * model_measure_params1,
+                model_states * model_states1,
+                model_climate_inputs * model_climate_inputs1,
+                model_climate_inputs * model_climate_inputs2,
+                model_precip_inputs * model_precip_inputs1);
+
+typedef struct {
+    double dew_p;
+    double sat_water;
+} foo_struct;
+
+typedef struct {
+    double e;
+    double tk;
+} foo_struct_input;
+
+double dew_point_test(double e);
+
+double * multiple_vars_test(double e, double tk);
+
+foo_struct * struct_test(double e, double tk);
+
+foo_struct * struct_io_test(foo_struct_input * fsi);
+
+void null_pointer_test(double *input);
 
 #endif

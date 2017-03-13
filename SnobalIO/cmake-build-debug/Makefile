@@ -744,32 +744,86 @@ init_snow.c.s:
 	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/init_snow.c.s
 .PHONY : init_snow.c.s
 
-library.o: library.c.o
+run_snobal.o: run_snobal.c.o
 
-.PHONY : library.o
+.PHONY : run_snobal.o
 
 # target to build an object file
-library.c.o:
-	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/library.c.o
-.PHONY : library.c.o
+run_snobal.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/run_snobal.c.o
+.PHONY : run_snobal.c.o
 
-library.i: library.c.i
+run_snobal.i: run_snobal.c.i
 
-.PHONY : library.i
+.PHONY : run_snobal.i
 
 # target to preprocess a source file
-library.c.i:
-	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/library.c.i
-.PHONY : library.c.i
+run_snobal.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/run_snobal.c.i
+.PHONY : run_snobal.c.i
 
-library.s: library.c.s
+run_snobal.s: run_snobal.c.s
 
-.PHONY : library.s
+.PHONY : run_snobal.s
 
 # target to generate assembly for a file
-library.c.s:
-	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/library.c.s
-.PHONY : library.c.s
+run_snobal.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/run_snobal.c.s
+.PHONY : run_snobal.c.s
+
+snobal_init.o: snobal_init.c.o
+
+.PHONY : snobal_init.o
+
+# target to build an object file
+snobal_init.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/snobal_init.c.o
+.PHONY : snobal_init.c.o
+
+snobal_init.i: snobal_init.c.i
+
+.PHONY : snobal_init.i
+
+# target to preprocess a source file
+snobal_init.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/snobal_init.c.i
+.PHONY : snobal_init.c.i
+
+snobal_init.s: snobal_init.c.s
+
+.PHONY : snobal_init.s
+
+# target to generate assembly for a file
+snobal_init.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/snobal_init.c.s
+.PHONY : snobal_init.c.s
+
+snobalio.o: snobalio.c.o
+
+.PHONY : snobalio.o
+
+# target to build an object file
+snobalio.c.o:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/snobalio.c.o
+.PHONY : snobalio.c.o
+
+snobalio.i: snobalio.c.i
+
+.PHONY : snobalio.i
+
+# target to preprocess a source file
+snobalio.c.i:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/snobalio.c.i
+.PHONY : snobalio.c.i
+
+snobalio.s: snobalio.c.s
+
+.PHONY : snobalio.s
+
+# target to generate assembly for a file
+snobalio.c.s:
+	$(MAKE) -f CMakeFiles/SnobalIO.dir/build.make CMakeFiles/SnobalIO.dir/snobalio.c.s
+.PHONY : snobalio.c.s
 
 vars.o: vars.c.o
 
@@ -876,9 +930,15 @@ help:
 	@echo "... init_snow.o"
 	@echo "... init_snow.i"
 	@echo "... init_snow.s"
-	@echo "... library.o"
-	@echo "... library.i"
-	@echo "... library.s"
+	@echo "... run_snobal.o"
+	@echo "... run_snobal.i"
+	@echo "... run_snobal.s"
+	@echo "... snobal_init.o"
+	@echo "... snobal_init.i"
+	@echo "... snobal_init.s"
+	@echo "... snobalio.o"
+	@echo "... snobalio.i"
+	@echo "... snobalio.s"
 	@echo "... vars.o"
 	@echo "... vars.i"
 	@echo "... vars.s"

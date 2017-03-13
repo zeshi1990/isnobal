@@ -18,8 +18,8 @@
  **
  */
 
-#include        "library.h"
-#include        "_snobal.h"
+#include "snobalio.h"
+#include "_snobal.h"
 
 int
 _mass_bal(void)

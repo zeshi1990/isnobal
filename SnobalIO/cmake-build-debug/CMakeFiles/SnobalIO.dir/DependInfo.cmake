@@ -27,7 +27,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/_vars.c" "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles/SnobalIO.dir/_vars.c.o"
   "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/do_data_tstep.c" "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles/SnobalIO.dir/do_data_tstep.c.o"
   "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/init_snow.c" "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles/SnobalIO.dir/init_snow.c.o"
-  "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/library.c" "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles/SnobalIO.dir/library.c.o"
+  "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/run_snobal.c" "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles/SnobalIO.dir/run_snobal.c.o"
+  "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobal_init.c" "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles/SnobalIO.dir/snobal_init.c.o"
+  "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/snobalio.c" "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles/SnobalIO.dir/snobalio.c.o"
   "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/vars.c" "/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/CMakeFiles/SnobalIO.dir/vars.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

@@ -22,7 +22,7 @@
 **	(and those variables modified by "_adj_layers")
 */
 
-#include "library.h"
+#include "snobalio.h"
 #include "_snobal.h"
 
 void
