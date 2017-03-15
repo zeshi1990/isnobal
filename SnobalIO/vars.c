@@ -71,7 +71,7 @@
 	double  m_s_l;          /* lower layer specific mass (kg/m^2) */
 	double  T_s;            /* average snowcover temp (K) */
 	double  T_s_0;          /* active snow layer temp (K) */
-	double  T_s_l;          /* lower layer temp (C) */
+	double  T_s_l;          /* lower layer temp (K) */
 	double  cc_s;           /* snowcover's cold content (J/m^2) */
 	double  cc_s_0;         /* active layer cold content (J/m^2) */
 	double  cc_s_l;         /* lower layer cold content (J/m^2) */
@@ -100,10 +100,10 @@
 
 	double  S_n;		/* net solar radiation (W/m^2) */
 	double  I_lw;           /* incoming longwave (thermal) rad (W/m^2) */
-	double  T_a;            /* air temp (C) */
+	double  T_a;            /* air temp (K) */
 	double  e_a;            /* vapor pressure (Pa) */
 	double  u;              /* wind speed (m/sec) */
-	double  T_g;            /* soil temp at depth z_g (C) */
+	double  T_g;            /* soil temp at depth z_g (K) */
 	double  ro;             /* measured runoff (m/sec) */
 
 
@@ -131,7 +131,7 @@
 	double  m_pp;		/* specific mass of total precip (kg/m^2) */
 	double  percent_snow;	/* % of total mass that's snow (0 to 1.0) */
 	double  rho_snow;       /* density of snowfall (kg/m^3) */
-	double  T_pp;           /* precip temp (C) */
+	double  T_pp;           /* precip temp (K) */
 	double	T_rain;		/* rain's temp (K) */
 	double	T_snow;		/* snowfall's temp (K) */
 	double  h2o_sat_snow;   /* snowfall's % of liquid H2O saturation */

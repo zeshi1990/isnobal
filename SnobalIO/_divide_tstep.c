@@ -39,6 +39,7 @@
  ** GLOBAL VARIABLES MODIFIED
  */
 
+#include <h/snobal.h>
 #include "snobalio.h"
 #include "_snobal.h"
 
@@ -59,7 +60,7 @@ _divide_tstep(
 	 *  Fetch the record for the timestep at the next level.
 	 */
 	next_level = tstep->level + 1;
-	next_lvl_tstep = tstep_info+ next_level;
+	next_lvl_tstep = tstep_info + next_level;
 
 	curr_lvl_deltas = input_deltas + tstep->level;
 	next_lvl_deltas = input_deltas + next_level;

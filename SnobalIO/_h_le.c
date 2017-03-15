@@ -58,11 +58,25 @@ _h_le(void)
 
 	/* calculate H & L_v_E */
 
+//	printf("Air pressure in Pa, %f\n", P_a);
+//	printf("Air temp in K, %f\n", T_a);
+//	printf("Snow surface temp in K, %f\n", T_s_0);
+//	printf("Relative height of air temp in m, %f\n", rel_z_T);
+//	printf("Air vapor pressure in Pa, %f\n", e_a);
+//	printf("Vapor pressure at surface, %f\n", e_s);
+//	printf("wind speed in m, %f\n", u);
+//	printf("wind speed meausurement height in m, %f\n", rel_z_u);
+//	printf("roughness length in m, %f\n", z_0);
+
 	if (hle1 (P_a, T_a, T_s_0, rel_z_T, e_a, e_s, rel_z_T, u,
 			rel_z_u, z_0, &H, &L_v_E, &E) != 0) {
+		printf("error code is %d\n", hle1(P_a, T_a, T_s_0, rel_z_T, e_a, e_s, rel_z_T, u,
+										  rel_z_u, z_0, &H, &L_v_E, &E));
 		usrerr("hle1 did not converge\nP_a %f, T_a %f, T_s_0 %f\nrelative z_T %f, e_a %f, e_s %f\nu %f, relative z_u %f, z_0 %f\n", P_a, T_a, T_s_0, rel_z_T, e_a, e_s, u, rel_z_u, z_0);
 		return FALSE;
 	}
+
+//	printf("Snow surface temp in K, %f\n", T_s_0);
 
 	return TRUE;
 }

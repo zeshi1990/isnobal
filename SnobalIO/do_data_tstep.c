@@ -73,6 +73,7 @@
  **	stop_no_snow
  */
 
+#include <h/snobal.h>
 #include "snobalio.h"
 #include "_snobal.h"
 
@@ -104,6 +105,9 @@ do_data_tstep(void)
 	T_g  = input_rec1.T_g;
 	if (ro_data)
 		ro = input_rec1.ro;
+
+//	printf("%d\n", data_tstep->level);
+//    printf("%f\n", data_tstep->time_step);
 
 	/*
 	 *  Compute deltas for the climate input parameters over

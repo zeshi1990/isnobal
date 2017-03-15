@@ -47,7 +47,7 @@ typedef struct {
      * rho: snow density (kg/m^3)
      * T_s: snow temperature (K)
      * T_s_0: active snow layer temperature (K)
-     * T_s_l: lower layer snow temperature (K)
+     * T_s_l: lower layer snow temperature (C)
      * h2o_sat: percentage of liquid h2o saturation (%)
      */
 
@@ -66,10 +66,10 @@ typedef struct {
      *  Climate-data input records
      *  S_n: net solar radiation (W/m^2)
      *  I_lw: Incoming longwave (thermal) radiation (W/m^2)
-     *  T_a: air temperature (K)
+     *  T_a: air temperature (C)
      *  e_a: vapor pressure (Pa)
      *  u: wind speed (m/sec)
-     *  T_g: Soil temperature (K)
+     *  T_g: Soil temperature (C)
      *  P_a: Air pressure (Pa)
      *  Note: we are not initializing ro here, we will set ro_data to False
      */
@@ -110,7 +110,7 @@ typedef struct {
      * m_pp: specific mass of total precip (kg/m^2)
      * percent_snow: % of total mass that is snow (0 to 1.0)
      * rho_snow: density of snowfall, (kg/m^3)
-     * T_pp: precip temperature, K
+     * T_pp: precip temperature, C
      */
 
     int precip_now;

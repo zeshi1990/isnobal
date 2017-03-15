@@ -10,19 +10,23 @@ model_states * run_snobal(model_params * model_params1,
                           model_climate_inputs * model_climate_inputs2,
                           model_precip_inputs * model_precip_inputs1) {
 
-    snobal_init(model_params1, model_measure_params1,
-                model_states1, model_climate_inputs1,
-                model_climate_inputs2, model_precip_inputs1);
+    if (!snobal_init(model_params1, model_measure_params1,
+                     model_states1, model_climate_inputs1,
+                     model_climate_inputs2, model_precip_inputs1)) {
+        printf("Initialization failed");
+        return NULL;
+    }
 
     init_snow();
 
     if(!do_data_tstep()) {
-        printf("Oops! Something happened when running snobal, please check log files.");
+        printf("Oops! Something happened when running snobal, please check log files.\n");
         return NULL;
     };
 
     model_states r;
     model_states * result = malloc(sizeof(model_states));
+
     r.z_s = z_s;
     r.rho = rho;
     r.T_s = T_s;

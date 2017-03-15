@@ -88,6 +88,7 @@
  **	z_snow
  */
 
+#include <h/snobal.h>
 #include "snobalio.h"
 #include "_snobal.h"
 
@@ -114,6 +115,8 @@ _do_tstep(
 		m_snow   = precip_info[tstep->level].m_snow;
 		z_snow   = precip_info[tstep->level].z_snow;
 	}
+
+//	printf("tstep level is %d\n", tstep->level);
 
 	h2o_total = 0.0;
 

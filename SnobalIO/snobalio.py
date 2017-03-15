@@ -93,7 +93,7 @@ class model_measure_params(Structure):
         ("z_g", c_double),
         ("z_u", c_double),
         ("z_T", c_double),
-        ("T_g", c_double)
+        ("z_0", c_double)
     ]
 
 def _construct_model_measure_params(measure_params):
@@ -151,7 +151,7 @@ def parse_states(state_result):
         return None
 
 
-_snobal = CDLL('cmake-build-debug/libSnobalIO.so')
+_snobal = CDLL('/Users/zeshizheng/Google Drive/Research/ISNOBAL/SnobalIO/cmake-build-debug/libSnobalIO.so')
 
 _snobal.run_snobal.argtypes = (POINTER(model_params),
                                POINTER(model_measure_params),

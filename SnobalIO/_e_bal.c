@@ -43,6 +43,8 @@ _e_bal(void)
 		if (! _h_le())
 			return FALSE;
 
+
+
 		/*      calculate G & G_0(conduction/diffusion heat xfr)    */
 
 		if (layer_count == 1) {

@@ -134,6 +134,29 @@ int snobal_init(model_params * model_params1,
         return FALSE;
     }
 
+    // tstep_info initialization
+    int level;
+
+    for (level = DATA_TSTEP; level <= SMALL_TSTEP; level++) {
+        tstep_info[level].level = level;
+        tstep_info[level].output = 0;
+    }
+
+    tstep_info[DATA_TSTEP].time_step = time_step;
+    tstep_info[NORMAL_TSTEP].time_step = time_step;
+    tstep_info[MEDIUM_TSTEP].time_step = MIN_TO_SEC(DEFAULT_MEDIUM_TSTEP);
+    tstep_info[SMALL_TSTEP].time_step = MIN_TO_SEC(DEFAULT_SMALL_TSTEP);
+
+    tstep_info[DATA_TSTEP].threshold = DEFAULT_NORMAL_THRESHOLD;
+    tstep_info[NORMAL_TSTEP].threshold = DEFAULT_NORMAL_THRESHOLD;
+    tstep_info[MEDIUM_TSTEP].threshold = DEFAULT_MEDIUM_THRESHOLD;
+    tstep_info[SMALL_TSTEP].threshold = DEFAULT_SMALL_THRESHOLD;
+
+    for (level = NORMAL_TSTEP; level <= SMALL_TSTEP; level++) {
+            tstep_info[level].intervals = (int) (tstep_info[level-1].time_step /
+                    tstep_info[level].time_step);
+    }
+
     return TRUE;
 
 }
