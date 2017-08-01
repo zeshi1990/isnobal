@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SnobalIO.dir/_vars.c.o"
   "CMakeFiles/SnobalIO.dir/do_data_tstep.c.o"
   "CMakeFiles/SnobalIO.dir/init_snow.c.o"
+  "CMakeFiles/SnobalIO.dir/run_isnobal_1d.c.o"
   "CMakeFiles/SnobalIO.dir/run_snobal.c.o"
   "CMakeFiles/SnobalIO.dir/snobal_init.c.o"
   "CMakeFiles/SnobalIO.dir/snobalio.c.o"

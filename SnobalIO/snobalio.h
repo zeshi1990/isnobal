@@ -8,6 +8,30 @@
 #include "h/snow.h"
 #include "h/radiation.h"
 
+long length_1d;
+
+typedef struct {
+
+    /*
+     * measurement heights/depths
+     * relative_hts: TRUE if the data given is relative to snow cover, FALSE if not
+     * i_elevation: elevation of the mountain, m
+     * z_g: soil temperature measurement depth, m
+     * z_u: wind speed measurement height, m
+     * z_T: temperature measurement height, m
+     * z_0: roughness length, m
+     */
+
+    int relative_hts;
+    double z_g;
+    double z_u;
+    double z_T;
+    double z_0;
+    double * i_elevation;
+
+} model_measure_params_1d;
+
+
 typedef struct {
 
     /*
@@ -101,6 +125,7 @@ typedef struct {
     double z_u;
     double z_T;
     double z_0;
+
 } model_measure_params;
 
 typedef struct {
@@ -118,6 +143,7 @@ typedef struct {
     double percent_snow;
     double rho_snow;
     double T_pp;
+
 } model_precip_inputs;
 
 model_states * run_snobal(model_params * model_params1,
@@ -127,12 +153,23 @@ model_states * run_snobal(model_params * model_params1,
                           model_climate_inputs * model_climate_inputs2,
                           model_precip_inputs * model_precip_inputs1);
 
+extern double ** run_isnobal_1d(long length,
+                                 model_params * model_params1,
+                                 model_measure_params_1d * model_measure_params_1d1,
+                                 double ** model_states_1d1,
+                                 double ** model_climate_inputs_1d1,
+                                 double ** model_climate_inputs_1d2,
+                                 double ** model_precip_inputs_1d1);
+
+
 int snobal_init(model_params * model_params1,
                 model_measure_params * model_measure_params1,
                 model_states * model_states1,
                 model_climate_inputs * model_climate_inputs1,
                 model_climate_inputs * model_climate_inputs2,
                 model_precip_inputs * model_precip_inputs1);
+
+
 
 typedef struct {
     double dew_p;
@@ -147,6 +184,12 @@ typedef struct {
 double dew_point_test(double e);
 
 double * multiple_vars_test(double e, double tk);
+
+void pointer_1darray_test(long length, double *data);
+
+void pointer_2darray_test(long nrows, long ncols, double **data1, double **data2);
+
+void pointer_struct_1darray_test(long length, model_measure_params_1d *model_measure_params_1d1);
 
 foo_struct * struct_test(double e, double tk);
 

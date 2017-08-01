@@ -51,3 +51,57 @@ void null_pointer_test(double *input) {
         printf("The input pointer is NULL\n");
     }
 }
+
+void pointer_1darray_test(long length, double *data) {
+    long i;
+    printf("[");
+    for (i = 0; i < length; i++) {
+        if (i != (length-1)) {
+            printf("%f, ", data[i]);
+        } else {
+            printf("%f", data[i]);
+        }
+    }
+    printf("]\n");
+}
+
+void pointer_2darray_test(long nrows, long ncols, double **data1, double **data2) {
+    long i;
+    long j;
+    printf("[");
+    for (i = 0; i < nrows; i++) {
+        for (j=0; j < ncols; j++) {
+            printf("%f, ", data1[i][j]);
+        }
+        if (i != (nrows - 1)) {
+            printf("\b\b\n ");
+        }
+    }
+    printf("\b\b]\n");
+
+    printf("[");
+    for (i = 0; i < nrows; i++) {
+        for (j=0; j < ncols; j++) {
+            printf("%f, ", data2[i][j]);
+        }
+        if (i != (nrows - 1)) {
+            printf("\b\b\n ");
+        }
+    }
+    printf("\b\b]\n");
+}
+
+void pointer_struct_1darray_test(long length, model_measure_params_1d *model_measure_params_1d1) {
+    length_1d = length;
+    long i;
+
+    printf("relative heights is %d\n", model_measure_params_1d1->relative_hts);
+    printf("distance from ground for soil is %f\n", model_measure_params_1d1->z_g);
+    printf("distance from ground for wind is %f\n", model_measure_params_1d1->z_u);
+    printf("distance from ground for temperature is %f\n", model_measure_params_1d1->z_T);
+    printf("roughness length is %f\n", model_measure_params_1d1->z_0);
+
+    for (i = 0; i < length_1d; i++) {
+        printf("elevation is %f\n", model_measure_params_1d1->i_elevation[i]);
+    }
+}

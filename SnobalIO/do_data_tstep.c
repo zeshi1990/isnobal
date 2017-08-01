@@ -178,6 +178,11 @@ do_data_tstep(void)
 	for (level = NORMAL_TSTEP; level <= SMALL_TSTEP; level++)
 		computed[level] = FALSE;
 
+	printf("The temperature T_a = %f \n", T_a);
+	printf("The temperature T_snow = %f \n", T_snow);
+    printf("Freezing temperature = %f \n", FREEZE);
+    printf("Ground temperature = %f \n", T_g);
+
 	/*
 	 *  Divide the data timestep into normal run timesteps.
 	 */
